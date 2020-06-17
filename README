@@ -1,0 +1,7 @@
+1.@Component由Spring框架自动扫描配置及装载；@Bean通常使用@Configuration进行管理，一个是自动化管理一个是半自动化。
+
+2.@Component用于类上，告知Spring要为该类创建bean；@Bean用于方法上，方法中包含产生bean实例的逻辑，
+因此@Bean方式更灵活、可定制性强。
+
+3.有些情况只能使用@Bean方式，如使用第三方库时，由于没有源代码，无法使用@Component自动配置，此时可使用@Bean方式;
+再如需要根据不同的条件创建不同的Bean对象，此时也需要使用@Bean方式。
